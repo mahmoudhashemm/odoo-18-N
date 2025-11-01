@@ -70,9 +70,9 @@ echo "=================================================="
 # تشغيل Odoo
 cd "$DESTINATION"
 if command -v docker >/dev/null 2>&1 && docker compose version >/dev/null 2>&1; then
-  docker compose up -d
+#  docker compose up -d
 else
-  docker-compose up -d
+ # docker-compose up -d
 fi
 
 echo "✅ Started Odoo @ http://localhost:${PORT}"
